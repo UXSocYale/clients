@@ -1,169 +1,174 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="format-detection" content="telephone=no"> 
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <meta charset="UTF-8">
-      
-      <!-- Can be removed, Google Fonts already accessible -->
-      <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
-      
-      <style type="text/css">
-          
-          body{
-              background:#f2f2f2;
-              font-family:"Noto Sans", Open Sans, Segoe UI, sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-          }
-      
-          #container{
-                position:absolute;
-                left:50%;
-                margin-left:-300px;
-              width:600px;
-              padding:1em;
-          }
-          
-          .havenly{
-              background-image:url(bg.png);
-              background-position: center;
-              background-size:100%;
-              background-repeat:repeat-y;
-          }
-          
-          img.havenly-logo{
-              width:130px;
-              margin:auto;
-              margin-top:2.5em;
-              
-          }
-          
-          #container img.header{
-              max-width:100%;
-              text-align: center;
-          }
-          
-          .text{
-              padding:0 1em;
-              width:80%;
-              box-sizing: border-box;
-              color:#4a4444;
-          }
-          
-          h1{
-              text-align: center;
-              color:#e45930;
-          }
-          
-          p{
-              margin:auto;
-              padding-bottom:1.5em;
-              width:80%;
-              justify-content: center;
-          }
-          
-          p.special{
-              margin:-.1em;
-              font-weight:bold;
-              color:#e45930;
-              text-align: center;
-              margin:auto;
-          }
-          
-          a.survey-button{
-              background:#e45930;
-              padding:.75em;
-              border-radius:10px;
-              text-decoration: none;
-              color:#fff;
-              box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-              -webkit-transition: all .3s linear;
+
+    <!--  Fonts don't load on mobile -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            background: #f2f2f2;
+            font-family: "Noto Sans", Open Sans, Segoe UI, sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        #container {
+            position: absolute;
+            left: 50%;
+            margin-left: -300px;
+            width: 600px;
+            padding: 1em;
+        }
+
+        .havenly {
+            background-image: url(bg.png);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: repeat-y;
+        }
+
+        img.havenly-logo {
+            width: 130px;
+            margin: auto;
+            margin-top: 2.5em;
+
+        }
+
+        #container img.header {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .text {
+            padding: 0 1em;
+            width: 80%;
+            box-sizing: border-box;
+            color: #4a4444;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e45930;
+        }
+
+        p {
+            margin: auto;
+            padding-bottom: 1.5em;
+            width: 80%;
+            justify-content: center;
+        }
+
+        p.special {
+            margin: -.1em;
+            font-weight: bold;
+            color: #e45930;
+            text-align: center;
+            margin: auto;
+        }
+
+        a.survey-button {
+            background: #e45930;
+            padding: .75em;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+            -webkit-transition: all .3s linear;
             -moz-transition: all .3s linear;
             -ms-transition: all .3s linear;
             -o-transition: all .3s linear;
             transition: all .3s linear;
-              
-          }
-          
-          a.survey-button:hover{
+
+        }
+
+        a.survey-button:hover {
             transform: translateY(-3px);
-              box-shadow: 0 7px 14px rgba(27, 27, 67, 0.21), 0 3px 6px rgba(0, 0, 0, 0.14);
-              background:#ed6a43;
-          }
-          
-          
-          .footer{
-              padding-top:1em;
-              margin:0 1em;
-              text-align: center;
-              
-          }
-          
-          .footer a{
-              color:#7e7b7b;
-              font-size:11px;
-          }
-      
-      </style>
+            box-shadow: 0 7px 14px rgba(27, 27, 67, 0.21), 0 3px 6px rgba(0, 0, 0, 0.14);
+            background: #ed6a43;
+        }
 
-  </head>
-  <body>
 
-      <div id="container">
-          
+        .footer {
+            padding-top: 1em;
+            margin: 0 1em;
+            text-align: center;
+
+        }
+
+        .footer a {
+            color: #7e7b7b;
+            font-size: 11px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
         <div class="image-text">
-            <h1>You just made a difference.</h1>  
+            <h1>You just made a difference.</h1>
         </div>
-          
-          <table class="havenly" width="100%" border="0" cellspacing="0" cellpadding="0">
-            
+
+        <table class="havenly" width="100%" border="0" cellspacing="0" cellpadding="0">
+
             <tr>
-               <td> <center><img src="header-2.jpg" class="header"></center></td>  
+                <td>
+                    <!-- Replace this link with your own hosted link to the provided header -->
+                    <center><img src="https://i.imgur.com/UvZLoSO.jpg" class="header"></center>
+                </td>
             </tr>
-              
+
             <tr>
                 <td align="center" class="text">
-                     <p>Your order directly helps refugee and immigrant women build a better future for themselves.</p>
-                
-            <!-- Use paragraph with the .special class for announcements like discounts. -->
-            
-            <p class="special">Use code 30% OFF for DEAL.</p>
-            
-            <p>Please consider taking this one-minute survey to help us improve our service.</p>
-            
-        <!-- Link to survey -->
-            <a class="survey-button" href="https://docs.google.com/forms/d/e/1FAIpQLSd7gR_BjftsmTbiTBBZdaOxpLvFe0VtyCXTHOjdtpQ8ykEk8g/viewform">Take the Customer Feedback Survey</a>
-                    
+                    <p>Your order directly helps refugee and immigrant women build a better future for themselves.</p>
+
+                    <!-- Use paragraph with the .special class for announcements like discounts. -->
+
+                    <p class="special">Use code 30% OFF for DEAL.</p>
+
+                    <p>Please consider taking this one-minute survey to help us improve our service.</p>
+
+                    <!-- Link to survey -->
+                    <a class="survey-button" href="https://docs.google.com/forms/d/e/1FAIpQLSd7gR_BjftsmTbiTBBZdaOxpLvFe0VtyCXTHOjdtpQ8ykEk8g/viewform">Take the Customer Feedback Survey</a>
+
                     <br><br><br>
-                    
+
                 </td>
             </tr>
             <tr>
-            
+
                 <td>
-                 
+
                 </td>
-              
+
             </tr>
         </table>
-              
-    <!-- Footer information -->
+
+        <!-- Footer information -->
         <div class="footer">
             <a href="https://www.havenlytreats.com/" target="_blank">Havenly Treats</a> <br>
-            <a href="mailto:info@havenlytreats.com">info@havenlytreats.com</a>  
+            <a href="mailto:info@havenlytreats.com">info@havenlytreats.com</a>
         </div>
-               
 
-        
-          
-          
-          
-      </div>
-      
-  
-  </body>
+
+
+
+
+
+    </div>
+
+
+</body>
+
 </html>
